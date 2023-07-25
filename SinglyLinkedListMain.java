@@ -2,13 +2,15 @@ package LinkedList;
 
 public class SinglyLinkedListMain {
     public static void main(String[] args) {
-        ReverseRecursive ll = new ReverseRecursive();
+        ReorderList ll = new ReorderList();
 //        ll.insertLast(12);
 //        ll.insertLast(20);
-        ll.insertFirst(13);
-        ll.insertFirst(17);
-        ll.insertFirst(20);
-        ll.insertFirst(11);
+        ll.insertFirst(1);
+        ll.insertFirst(2);
+        ll.insertFirst(3);
+        ll.insertFirst(4);
+        ll.insertFirst(5);
+//        ll.insertFirst(14);
 //        ll.display();
 //        ll.insert(4);
 //        ll.insert(2);
@@ -23,7 +25,8 @@ public class SinglyLinkedListMain {
 //        ll.helper(2, 3);
 //        ll.display();
 
-        ll.reverse(new Node(-1, ll.head));
+        ll.reorderList(ll.head);
+//        System.out.println(ll.reorderList(ll.head));
         ll.display();
     }
 }
