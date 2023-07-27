@@ -2,7 +2,7 @@ package LinkedList;
 
 public class SinglyLinkedListMain {
     public static void main(String[] args) {
-        RotateList ll = new RotateList();
+        BinaryToDecimal ll = new BinaryToDecimal();
 //        ll.insertLast(12);
 //        ll.insertLast(20);
 //        ll.insertFirst(7);
@@ -12,6 +12,7 @@ public class SinglyLinkedListMain {
         ll.insertFirst(3);
         ll.insertFirst(2);
         ll.insertFirst(1);
+        Node node = ll.get(2);
 //        ll.insertFirst(14);
 //        ll.display();
 //        ll.insert(4);
@@ -27,8 +28,8 @@ public class SinglyLinkedListMain {
 //        ll.helper(2, 3);
 //        ll.display();
 
-        ll.head = ll.rotateRight(ll.head, 2);
-//        System.out.println(ll.reorderList(ll.head));
+//        ll.getDecimalValue(ll.head);
+        System.out.println(ll.getDecimalValue(ll.head));
         ll.display();
     }
 }
