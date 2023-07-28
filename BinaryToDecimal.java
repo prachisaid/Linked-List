@@ -16,6 +16,7 @@ public class BinaryToDecimal extends SinglyLinkedList{
 
         while(temp != null){
             if(temp.val != 0){
+
                 ans += Math.pow(2, length);
             }
             length--;

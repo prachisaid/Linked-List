@@ -21,8 +21,8 @@ public class ReverseEveryKNode extends SinglyLinkedList{
         while (true) {
             Node last = prev;
             Node newEnd = current;
-
             Node next = current.next;
+
             for (int i = 0; current != null && i < k; i++) {
                 current.next = prev;
                 prev = current;
